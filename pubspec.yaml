@@ -1,0 +1,37 @@
+name: medicine_reminder
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.22.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^17.2.1
+  audioplayers: ^6.0.0
+  path_provider: ^2.0.11
+  timezone: ^0.9.3
+  shared_preferences: ^2.0.15
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/alarm.mp3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon/image-512x512.png"
